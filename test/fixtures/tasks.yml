@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  text: 
+  start: 2024-03-21
+  end: 2024-03-21
+  check: false
+  completed: 1
+  updated_on: 2024-03-21 23:09:42
+
+two:
+  title: MyString
+  text: 
+  start: 2024-03-21
+  end: 2024-03-21
+  check: false
+  completed: 1
+  updated_on: 2024-03-21 23:09:42
