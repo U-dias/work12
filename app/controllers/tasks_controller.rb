@@ -15,7 +15,7 @@ class TasksController < ApplicationController
        redirect_to controller: :tasks, action: :index
        flash[:notice] = "タスクを作成しました。"
     else
-       flash.now[:notice] = "作成に失敗しました"
+       flash.now[:alret] = "作成に失敗しました"
        render 'new',status: :unprocessable_entity
     end
   end
