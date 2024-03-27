@@ -22,5 +22,5 @@ require('data-confirm-modal')
 // other require statements
 
 $(function(){
-  setTimeout("$('.notice').fadeOut('slow')", 2000);
+  setTimeout("$('.flash').fadeOut('slow')", 2000);
 });
