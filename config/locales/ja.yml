@@ -4,8 +4,8 @@ ja:
       task:
         title: "タイトル"
         description: "内容"
-        start: "開始時期"
-        end: "終了予定"
+        start: "開始日"
+        end: "終了日"
         updated_on: "更新日時"
         up: "更新日"
         completed: "終日"
