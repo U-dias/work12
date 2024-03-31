@@ -10,8 +10,8 @@
   <td><div><%= f.date_field :start %></div></td>
   <td><div><%= f.label :end,"終了日" %></div></td>
   <td><div><%= f.date_field :end %></div></td>
-  <td><div><%= f.label :completed %></div></td>
-  <td><div><%= f.select :completed, [['未完了',0],['完了',1]], {} %></div>
+  <td><div><%= f.label :check,"終日" %></div></td>
+  <td><div><%= f.check_box :check, {} ,checked_value = 1 ,unchecked_value = 0 %></div>
   <div><%= f.submit "更新" %></div></td>
 <td><%= link_to 'タスク一覧に戻る', tasks_path, class:"back" %></td>
 </table>

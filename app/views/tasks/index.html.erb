@@ -23,11 +23,10 @@
         <td class="title"><%= task.title %></td>
         <td class="start"><%= l task.start, format: :default%></td>
         <td class="end"><%= l task.end, format: :default %></td>
-        <td class="comp"><% if task.completed == 1 %>
-          ○
-         <% else %>
-          <!-- タスクが未完了の場合表示しない -->
-         <% end %></td>
+        <td class="comp">
+        <%= convert(task.check) %>
+        
+         </td>
         <td class="up"><%= l task.updated_on, format: :time %></td>
         <td><%= link_to '編集', edit_task_path(task),class:"edit" %></td>
         <td><%= link_to '詳細', task_path(task),class:"show" %></td>
