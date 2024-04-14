@@ -8,19 +8,15 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
-import Rails from 'rails-ujs';
-Rails.start();
 
-Rails.start()
+//Rails.start();
+
+
 Turbolinks.start()
 ActiveStorage.start()
 
+require('@rails/ujs').start()
 require('popper.js')
 require('bootstrap')
-require('@rails/ujs').start()
 require('data-confirm-modal')
 // other require statements
-
-$(function(){
-  setTimeout("$('.flash').fadeOut('slow')", 2000);
-});
