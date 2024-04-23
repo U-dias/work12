@@ -8,6 +8,15 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
-Rails.start()
+
+//Rails.start();
+
+
 Turbolinks.start()
 ActiveStorage.start()
+
+require('@rails/ujs').start()
+require('popper.js')
+require('bootstrap')
+require('data-confirm-modal')
+// other require statements
